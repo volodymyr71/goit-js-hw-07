@@ -30,6 +30,8 @@ inputValue.classList.add('validation-input')
 inputValue.addEventListener('change', inputText => {
     inputValue.classList.remove('valid');
     inputValue.classList.remove('invalid')
-    if (inputText.target.value.length === Number(inputValue.getAttribute("data-length"))) {inputValue.classList.add('valid')}
+    if (inputText.target.value.length === 0) {return}
+    if (inputText.target.value.length === Number(inputValue.getAttribute("data-length"))) 
+        {inputValue.classList.add('valid')}
     else {inputValue.classList.add('invalid')}
 });

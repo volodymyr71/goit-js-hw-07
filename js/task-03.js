@@ -31,23 +31,12 @@ let textHTMLgallery = '';
     + '" alt="' + item.alt + '" width = 300 height = 200 /> </li>'})
     targetUlGallery.insertAdjacentHTML('afterbegin', textHTMLgallery)
 
-    // targetUlGallery.setAttribute("style", "width: 300")
-
     targetUlGallery.style.display = 'flex';
-    // targetUlGallery.style.flex-direction = 'row';
-
-
-    // targetUlGallery.style.width = "100";
-    // targetUlGallery.style.backgroundColor = 'orange';
     targetUlGallery.style.listStyle = 'none';
     targetUlGallery.style.padding = '0';
     targetUlGallery.style.justifyContent = 'space-around';
 
-    // console.dir(targetUlGallery)
 
-    // const targetImg = targetUlGallery.querySelectorAll('img');
-    // console.log(targetImg)
-    // targetImg[0].style.padding = '20';
 
     
 

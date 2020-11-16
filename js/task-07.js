@@ -5,3 +5,9 @@
 // <input id="font-size-control" type="range" />
 // <br />
 // <span id="text">Абракадабра!</span>
+
+const inputRange = document.querySelector('#font-size-control');
+const targetText = document.querySelector('#text');
+inputRange.addEventListener('input', inputValue => {
+    targetText.style.fontSize = (16 + inputValue.target.value / 4) + 'px'});
+
